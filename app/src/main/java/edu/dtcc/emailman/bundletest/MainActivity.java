@@ -11,20 +11,20 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     // Define two keys for the bundle
-    static final String AREA_KEY = "area_value";
-    static final String PERIMETER_KEY = " perimeter_value";
+    private final String AREA_KEY = "area_value";
+    private final String PERIMETER_KEY = " perimeter_value";
 
     // Define variables for area and perimeter
-    static double area;
-    static double perimeter;
+    private double area;
+    private double perimeter;
 
     // Define the input fields for length and width
-    static EditText etLength;
-    static EditText etWidth;
+    private EditText etLength;
+    private EditText etWidth;
 
     // Define the output fields for area and perimeter
-    static TextView tvArea;
-    static TextView tvPerimeter;
+    private TextView tvArea;
+    private TextView tvPerimeter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         etLength = (EditText) findViewById(R.id.etLength);
         etWidth = (EditText) findViewById(R.id.etWidth);
 
+        /*
         // Is there a saved bundle?
         if (savedInstanceState != null) {
             // Restore the saved data
@@ -49,8 +50,10 @@ public class MainActivity extends AppCompatActivity {
             tvPerimeter.setText(Double.toString(perimeter));
             Log.d("ERIC", "bundle restored");
         }
+        */
     }
 
+    /*
     @Override
     protected void onSaveInstanceState(Bundle outState){
         super.onSaveInstanceState(outState);
@@ -60,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d("ERIC","bundle saved");
     }
+    */
 
     public void onCalcClick(View view) {
 
