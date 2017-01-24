@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         etLength = (EditText) findViewById(R.id.etLength);
         etWidth = (EditText) findViewById(R.id.etWidth);
 
-        /*
         // Is there a saved bundle?
         if (savedInstanceState != null) {
             // Restore the saved data
@@ -50,10 +49,8 @@ public class MainActivity extends AppCompatActivity {
             tvPerimeter.setText(Double.toString(perimeter));
             Log.d("ERIC", "bundle restored");
         }
-        */
     }
 
-    /*
     @Override
     protected void onSaveInstanceState(Bundle outState){
         super.onSaveInstanceState(outState);
@@ -63,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d("ERIC","bundle saved");
     }
-    */
 
     public void onCalcClick(View view) {
 
